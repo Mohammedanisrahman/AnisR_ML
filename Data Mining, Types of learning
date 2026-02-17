@@ -1,0 +1,121 @@
+**Hands-on
+Machine Learning
+with Scikit-Learn,
+Keras & TensorFlow**
+
+By:- Aurélien Géron
+
+Machine Learning is the science (and art) of programming computers so they can
+learn from data.
+
+![image.png](attachment:e43013d3-2a05-4eae-ac2c-a338ca241bb6:image.png)
+
+## DATA MINING
+
+Applying ML techniques to dig into large amounts of data can help discover pat‐
+terns that were not immediately apparent. This is called data mining.
+
+## Supervised learning
+
+In supervised learning, the training set you feed to the algorithm includes the desired
+solutions, called labels
+
+Classification 
+
+Regression
+
+### Supervised learning Algorithms
+
+- k-Nearest Neighbors
+• Linear Regression
+• Logistic Regression
+• Support Vector Machines (SVMs)
+• Decision Trees and Random Forests
+• Neural networks2
+
+ 
+
+![image.png](attachment:70bc1896-cc5b-4167-a2e8-5822494a07ec:image.png)
+
+## Unsupervised learning
+
+In unsupervised learning, the training dataset lacks predefined labels, requiring the system to identify patterns and structures autonomously without explicit guidance or supervision.
+
+### Unsupervised Learning Algorithms
+
+- Clustering
+— K-Means
+— DBSCAN
+— Hierarchical Cluster Analysis (HCA)
+• Anomaly detection and novelty detection
+— One-class SVM
+— Isolation Forest
+• Visualization and dimensionality reduction
+— Principal Component Analysis (PCA)
+— Kernel PCA
+— Locally Linear Embedding (LLE)
+— t-Distributed Stochastic Neighbor Embedding (t-SNE)
+• Association rule learning
+— Apriori
+— Eclat
+    
+    ### Between Supervised and Unsupervised Learning:
+    
+    - **Semi-supervised learning:** Algorithms that work with partially labeled data (combination of labeled and unlabeled examples)
+    - **Reinforcement learning:** Learning system that observes environment, performs actions, and gets rewards or penalties
+    
+    ### Model Training and Evaluation:
+    
+    - **Batch learning vs. online learning:** Whether the system can learn incrementally from new data or needs to be retrained from scratch
+    - **Instance-based vs. model-based learning:** Different approaches to generalization
+    - **Cross-validation:** Technique for assessing model performance and avoiding overfitting
+    - **Hyperparameter tuning:** Process of optimizing model parameters that aren't learned from data
+    
+    ### Common Challenges:
+    
+    - **Underfitting:** When model is too simple to learn underlying structure (high bias)
+    - **Overfitting:** When model learns noise in training data (high variance)
+    - **Insufficient quantity of training data:** Impact of dataset size on model performance
+    - **Poor quality data:** Issues with errors, outliers, and noise
+    - **Irrelevant features:** Importance of feature engineering and selection
+    
+    ### Performance Metrics:
+    
+    - **Accuracy, precision, recall, F1-score:** For classification tasks
+    - **RMSE, MAE, R²:** For regression tasks
+    - **Confusion matrix:** Visual representation of classification performance
+    
+    ### Data Preprocessing:
+    
+    - **Feature scaling:** Normalization and standardization techniques
+    - **Handling missing data:** Imputation strategies
+    - **Categorical encoding:** One-hot encoding, ordinal encoding
+    - **Feature engineering:** Creating new features from existing ones
+
+### Fitness function
+
+Measures how good your model is
+
+### Cost function
+
+Measures how bad it is. For Linear Regression problems, people
+typically use a cost function that measures the distance between the linear model’s
+predictions and the training examples; the objective is to minimize this distance.
+
+### Training the model
+
+You feed it your training (Linear Regression Algorithm)
+examples, and it finds the parameters that make the linear model fit best to your data.
+This is called training the model.
+
+#Train the model
+
+`model.fit(X, y)`
+
+- **Representative training set:**
+    
+    *A dataset that captures the true diversity and distribution of real-world data.*
+    
+- **Non-representative training set:**
+    
+    *A dataset that is biased or incomplete with respect to real-world conditions.*
